@@ -1,12 +1,11 @@
-import Image from "next/image";
+import Categories from "./components/Categories";
+import PropertyList from "./components/properties/PropertyList";
 
 export default function Home() {
   return (
     <main className="">
-      <h1>
-        Airbnb-clone
-
-      </h1>
+      <Categories />
+      <PropertyList />
     </main>
   );
 }

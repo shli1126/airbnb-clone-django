@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Navbar } from "flowbite-react";
 import Image from 'next/image';
 import SearchFilters from './SearchFilters';
+import UserNav from './UserNav';
+import AddPropertyButton from './AddPropertyButton';
 
 export default function Header() {
     return (
@@ -12,7 +14,8 @@ export default function Header() {
                 <Image src="/assets/Airbnb_Logo.png" width={128} height={40} className="mr-3 ml-5 mt-3 mb-3" alt="Airbnb Logo" />
             </Navbar.Brand>
             <SearchFilters />
-            <Navbar.Link href="#">Add Property - User nav</Navbar.Link>
+            <AddPropertyButton/>
+            <UserNav/>
         </Navbar>
     )
 }
